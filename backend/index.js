@@ -24,12 +24,14 @@ app.use('/cart', cartRoute)
 app.use('/wishlists', wishlistRoute)
 app.use('/checkouts', checkoutRoutes)
 
-app.listen(process.env.port, async () => {
+const PORT = process.env.PORT || 8080; 
+
+app.listen(PORT, async () => {
     try {
-        await connection
-        console.log('Connected to db')
-    } catch {
-        console.log('Not connected to db')
+        await connection;
+        console.log('Connected to db');
+    } catch (err) {
+        console.log('Not connected to db', err);
     }
-    console.log(`Server running at ${process.env.port}`)
-})
+    console.log(`Server running at ${PORT}`);
+});
