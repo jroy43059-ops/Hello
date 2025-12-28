@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.AdminDashboardContainer {
+    /* border: 1px solid green; */
+    display: flex;
+}
+
+.AdminDashboardContainer>div:nth-child(2) {
+    /* border: 1px solid hotpink; */
+    width: 85%;
+    margin-left: 15%;
+}
+
+.mehelLogo {
+    /* border: 1px solid red; */
+    top: 0;
+    /* padding-top: 10px; */
+    position: fixed;
+    padding-top: 20px;
+    width: 85%;
+    background-color: white;
+}
+
+.ADMenueContainer {
+    /* border: 1px solid blue; */
+    width: 15%;
+    background-color: maroon;
+    color: white;
+    height: 100vh;
+    position: fixed;
+}
+
+.ADMenueContainer>img {
+    width: 90%;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.ADMenueContainer h4 {
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.activeonAdmin {
+    background-color: white;
+    color: maroon;
+}
+
+.ADResultContainer {
+    /* border: 1px solid yellow; */
+    width: 80%;
+}
+
+.ADMenueContainer>div img {
+    width: 60%;
+    margin: auto;
+}
+
+.ADMenueContainer>div:last-child {
+    /* border: 1px solid rgb(0, 255, 13); */
+    margin-top: 20px;
+}
+
+.ADMenueContainer>div:last-child button {
+    float: right;
+    width: 90%;
+    text-align: left;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.DashboardContainer {
+    width: 100%;
+}
+
+.DashboardContainerFirstDiv {
+    /* border: 1px solid maroon; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+}
+
+.DashboardContainerFirstDiv>div:nth-child(1) {
+    /* border: 1px solid green; */
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 80%;
+}
+
+.DashboardContainerFirstDiv>div:nth-child(1)>div h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.DashboardContainerFirstDiv>div:nth-child(1)>div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.chart {
+    /* border: 1px solid yellow; */
+    margin: auto;
+}
+
+.ADMenueContainer span {
+    display: none;
+}
+
+.AddProductContainer {
+    /* border: 1px solid green; */
+    padding-top: 100px;
+    width: 100%;
+}
+
+.FormContainer {
+    /* border: 1px solid hotpink; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.FormContainer input {
+    border: 1px solid #718096;
+    color: #718096;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.FormContainer select {
+    border: 1px solid #718096;
+    color: #718096;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.FormContainer button {
+    border: 1px solid #718096;
+    color: #718096;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.FormContainer .addBtn {
+    /* border: 1px solid red; */
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: maroon;
+    color: white;
+}
+
+.addBtn:hover {
+    background-color: #FFC100;
+    color: maroon;
+    transition: all 900ms;
+}
+
+.sizeContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.sizeContainer label {
+    font-size: 18px;
+    /* border: 1px solid hotpink; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: right;
+    gap: 5px;
+}
+
+.UsersContainer {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-top: 100px;
+}
+
+.SkelitonContainer {
+    /* border: 1px solid rgb(9, 255, 0); */
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.SkelitonContainer>div>div {
+    /* border: 1px solid rgb(0, 30, 255); */
+    display: grid;
+    grid-template-columns: 20% 65%;
+    column-gap: 14%;
+    margin-bottom: 5px;
+}
+
+.UserResultContainer {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.UserResultContainer>div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.UserResultContainer>div>div {
+    /* border: 1px solid rgb(0, 30, 255); */
+    display: grid;
+    grid-template-columns: 20% 65%;
+    column-gap: 10px;
+    text-align: left;
+}
+
+.UserResultContainer>div>div div:nth-child(1) {
+    /* border: 1px solid hotpink; */
+    display: flex;
+    align-items: center;
+}
+
+.UserResultContainer>div>div h3 {
+    text-align: left;
+}
+
+.UserResultContainer h3 {
+    height: 30px;
+    text-align: center;
+}
+
+.UserResultContainer h2 {
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFC100;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.UserResultContainer h2 svg {
+    /* border: 1px solid red; */
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.viewMoreUserModal img {
+    width: 50%;
+    margin: auto;
+}
+
+.viewMoreUserModal p {
+    text-align: center;
+}
+
+.viewMoreUserModal p:nth-last-child(3) {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.viewMoreUserModal span {
+    font-weight: 500;
+}
+
+.InventoryContainer {
+    padding-top: 100px;
+}
+
+.ProductsSkelitonContainer {
+    /* border: 1px solid rebeccapurple; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.ProductsSkelitonCard {
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.ProductsSkelitonCard>div:nth-child(1) {
+    /* border: 1px solid rgb(0, 94, 128); */
+    display: flex;
+    gap: 5px;
+}
+
+.ProductsSkelitonCard>div>div:nth-child(1) {
+    /* border: 1px solid rgb(111, 128, 0); */
+    width: 30%;
+}
+
+.ProductsSkelitonCard>div>div:nth-child(2) {
+    /* border: 1px solid rgb(0, 109, 128); */
+    width: 70%;
+}
+
+.ProductsSkelitonCard>div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    gap: 5px;
+}
+
+.ProductsSkelitonCard h2 {
+    height: 29px;
+}
+
+.ProductsSkelitonCard img {
+    height: 95%;
+}
+
+.ProductsBtns {
+    /* border: 1px solid lawngreen; */
+    background-color: #FFC100;
+    padding: 10px 5px;
+    height: 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ProductsBtns svg {
+    cursor: pointer;
+}
+
+.viewMoreproductModal>div:nth-child(1) {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.viewMoreCartModal img {
+    width: 50%;
+    margin: auto;
+}
+
+.logoutBtn {
+    background-color: #FFC100;
+    padding: 5px 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+}
+
+.logoutBtn:hover {
+    background-color: #718096;
+    transition: all 900ms;
+}
+
+@media (max-width:1250px) {
+    .ADMenueContainer {
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width:1200px) {
+    .UserResultContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .SkelitonContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ProductsSkelitonContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .UsersContainer {
+        padding-top: 70px;
+    }
+
+}
+
+@media (max-width:780px) {
+    .ADMenueContainer {
+        height: auto;
+    }
+
+    .chart {
+        width: 95%;
+    }
+
+    .DashboardContainerFirstDiv {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .DashboardContainerFirstDiv>div:nth-child(1) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .AdminDashboardContainer {
+        flex-direction: column;
+    }
+
+    .ADMenueContainer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .ADMenueContainer>img {
+        display: none;
+    }
+
+    .ADMenueContainer>div:last-child {
+        margin-top: 0px;
+        display: flex;
+        padding: 0px 20px;
+    }
+
+    .ADMenueContainer>div:nth-child(2) {
+        /* border: 1px solid white; */
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ADMenueContainer>div:last-child button {
+        text-align: center;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+        font-size: 11px;
+    }
+
+    .ADMenueContainer>div:nth-child(2) h4 {
+        text-align: left;
+    }
+
+    .ADMenueContainer>div:nth-child(2) img {
+        width: 100px;
+    }
+
+    .mehelLogo {
+        top: 160px;
+        width: 100%;
+        /* display: none; */
+    }
+
+    .AdminDashboardContainer>div:nth-child(2) {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 120px;
+    }
+
+    .AddProductContainer {
+        padding-top: 100px;
+    }
+
+    .UsersContainer {
+        padding-top: 100px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .UserResultContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .SkelitonContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ProductsSkelitonContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ADMenueContainer>div:last-child button {
+        font-size: 8px;
+    }
+
+    .mehelLogo {
+        top: 155px;
+    }
+}
+
+@media (max-width:500px) {
+    .ADMenueContainer span {
+        display: contents;
+    }
+
+    .ADMenueContainer p {
+        display: none;
+    }
+
+    .ADMenueContainer span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ADMenueContainer>div:nth-child(2) img {
+        width: 80px;
+    }
+
+    .ADMenueContainer>div:last-child button {
+        padding: 7px;
+    }
+
+    .DashboardContainerFirstDiv>div:nth-child(1) {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .ADMenueContainer>div:last-child button {
+        font-size: 14px;
+    }
+
+    .mehelLogo {
+        top: 130px;
+    }
+
+    .AdminDashboardContainer>div:nth-child(2) {
+        padding-top: 70px;
+    }
+
+    .AddProductContainer {
+        padding-top: 110px;
+    }
+}
+
+@media (max-width:450px) {
+    .FormContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ProductsSkelitonContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:430px) {
+    .DashboardContainerFirstDiv h2 {
+        font-size: 13px;
+    }
+
+    .DashboardContainerFirstDiv>div:nth-child(1) {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .UserResultContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .SkelitonContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,470 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.homeMainContainer {
+    /* border: 1px solid red; */
+    background-color: #fefbf2;
+}
+
+.homeCollectionsDiv {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    /* height: 200px; */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 25px;
+
+}
+
+.homeCollectionsDiv>div {
+    /* border: 1px solid green; */
+    cursor: pointer;
+}
+
+.homeCollectionsDiv img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.homeCollectionsDiv h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 1rem;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #a9a8a6;
+    line-height: 0.5cm;
+}
+
+.Home_New_Arrival_Headin {
+    /* border: 1px solid red; */
+    width: 83%;
+    margin: auto;
+    font-family: "playfairdisplay";
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 45px;
+    transform: scale(1.2);
+    text-align: center;
+    color: #535353;
+    margin-top: 30px;
+    margin-bottom: 20PX;
+}
+
+.Home_newArr_men_women {
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* height: 30px; */
+}
+
+
+.Home_newArr_men_women>button {
+    /* border: 1px solid gold; */
+    border: none;
+    background-color: unset;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #8B8B8B;
+    cursor: pointer;
+    letter-spacing: 0.15em;
+    padding: 5px;
+}
+
+/* 
+.Home_newArr_men_women button:hover {
+    border-bottom: 2px solid gray;
+} */
+
+.newArrival_card_con {
+    margin-top: 20px;
+    /* border: 1px solid green; */
+    /* height: 600px; */
+    overflow: scroll;
+    display: flex;
+    gap: 9px;
+}
+
+.newArrival_card_con>div {
+    /* width: 350px; */
+    height: 600px;
+    /* border: 1px solid red; */
+}
+
+.newArrival_card_con img {
+    width: 100%;
+}
+
+.newArrival_card_con p {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.newArrival_card_con h5 {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.newArrival_card_con::-webkit-scrollbar {
+    display: none;
+}
+
+.HomeCard {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.HomeCardImg_Div {
+    width: 100%;
+    height: 100%;
+}
+
+.HomeCardImg_Div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.HomeCardoverlay {
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease;
+}
+
+.HomeCard:hover .HomeCardoverlay {
+    height: 30px;
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 13px;
+}
+
+.HomeCardText {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.newArrival-Active-men {
+    background-color: aqua;
+}
+
+.Attending_Wedding {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    cursor: pointer;
+}
+
+.Attending_Wedding>div>img {
+    width: 100%;
+}
+
+.moheyBanner {
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.moheyBanner>img {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.moheyBanner>div>img {
+    width: 100%;
+}
+
+.mohey_image2 {
+    display: none;
+}
+
+.HomeContainer2 {
+    /* border: 1px solid red; */
+}
+
+.Home_newArr_con_2_buttons {
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.Home_newArr_con_2_buttons>button {
+    /* border: 1px solid red; */
+    color: #8B8B8B;
+}
+
+.container_1_cards>h5 {
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.container_1_cards>p {
+    font-size: 14px;
+}
+
+.container_2_card>h5 {
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.container_2_card>p {
+    font-size: 14px;
+}
+
+.home_viewAll {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    /* border: 1px solid green; */
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.HomeContainer3>p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #8B8B8B;
+}
+
+.Container3_img_2 {
+    display: none;
+}
+
+.moheyBanner {
+    cursor: pointer;
+}
+
+.container_4 {
+    /* border: 1px solid red; */
+    background-color: #fff2dc;
+}
+
+.contaoner_5 {
+    padding: 50px 20px;
+}
+
+.container_6>p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #8B8B8B;
+}
+
+.container_6_card_parent {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 20px;
+    gap: 30px;
+}
+
+.container_6_card_parent>div:nth-child(2) {
+    /* border: 1px solid red; */
+    position: relative;
+    bottom: 50px;
+}
+
+.container_6_card_parent img {
+    cursor: pointer;
+}
+
+.container5_img_2 {
+    display: none;
+}
+
+@media (max-width:1180px) {
+    .homeCollectionsDiv {
+        width: 100%;
+        /* border: 1px solid red; */
+        overflow: scroll;
+    }
+
+    .homeCollectionsDiv>div {
+        /* border: 1px solid blue; */
+        width: 150px;
+    }
+
+    .homeCollectionsDiv img {
+        width: 100%;
+    }
+
+    .homeCollectionsDiv::-webkit-scrollbar {
+        display: none;
+    }
+
+    .Home_newArr_con_2_buttons {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+}
+
+
+@media (max-width:770px) {
+    .homeCollectionsDiv {
+        margin-top: 20px;
+        width: 100%;
+        gap: 30px;
+        /* border: 1px solid green; */
+        overflow: scroll;
+    }
+
+    .homeCollectionsDiv::-webkit-scrollbar {
+        display: none;
+    }
+
+    .homeCollectionsDiv>div {
+        /* border: 1px solid rebeccapurple; */
+        width: 100px;
+    }
+
+    .homeCollectionsDiv>div>h2 {
+        margin-top: 5px;
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .Home_newArr_men_women {
+        border-top: 1px solid rgb(199, 199, 199);
+        padding-top: 10px;
+    }
+
+    .Home_newArr_men_women>button {
+        font-size: 12px;
+    }
+
+    .Home_newArr_con_2_buttons {
+        border-top: 1px solid rgb(192, 189, 189);
+        padding-top: 10px;
+        width: 100%;
+        overflow: scroll;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 45px;
+
+    }
+
+    .Home_newArr_con_2_buttons>button {
+        /* border: 1px solid green; */
+    }
+
+    .Home_newArr_con_2_buttons>button:first-child {
+        /* border: 1px solid red; */
+        width: 120px;
+    }
+
+    .Home_newArr_con_2_buttons>button:last-child {
+        /* border: 1px solid red; */
+        width: 120px;
+    }
+
+    .Home_newArr_con_2_buttons::-webkit-scrollbar {
+        display: none;
+    }
+
+    .Home_New_Arrival_Headin {
+        font-size: 22px;
+    }
+
+    .container_1_cards>h5 {
+        margin: 0px;
+        margin-left: 5px;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    .container_1_cards>p {
+        font-size: 14px;
+    }
+
+    .newArrival_card_con {
+        /* border: 1px solid red; */
+        gap: 0px;
+    }
+
+    .HomeContainer3>p {
+        font-size: 12px;
+    }
+
+    .Attending_Wedding {
+        grid-template-columns: repeat(1, 1fr);
+        cursor: pointer;
+    }
+
+    .Container3_img_2 {
+        display: flex;
+    }
+
+    .Container3_img_1 {
+        display: none;
+    }
+
+    .mohey_image1 {
+        display: none;
+    }
+
+    .mohey_image2 {
+        display: flex;
+    }
+
+    .container_6_card_parent {
+        /* border: 1px solid red; */
+        margin-top: 0px;
+        overflow: scroll;
+        gap: 0px;
+        padding: 0px;
+    }
+
+    .container_6_card_parent>div {
+        /* border: 1px solid rebeccapurple; */
+        width: 260px;
+    }
+
+    .container_6_card_parent>div:nth-child(2) {
+        position: unset;
+    }
+
+    .container5_img_1 {
+        display: none;
+    }
+
+    .container5_img_2 {
+        display: flex;
+    }
+
+    .contaoner_5 {
+        padding: 0px;
+    }
+
+}

@@ -1,0 +1,449 @@
+/* .card_heart_div {
+    border: 1px solid red;
+    width: 22px;
+    position: absolute;
+    left: 270px;
+    top: 10px;
+} */
+/* <div className={styles.Card}>
+                <div className={styles.card_heart_div}><AiOutlineHeart color='white' size='20px' /></div>
+                <img src="https://static01.manyavar.com/uploads/dealimages/13841/listimages/glamorous-biscuit-color-sherwani-odes959d-303-1.jpg" alt="" />
+                <p>Glamorous Biscuit Color Sherwani</p>
+                <p>R 230000</p>
+                <p>S M L XL XXL 03XL</p>
+            </div> */
+
+.products_container_1 {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, 18% 64% 18%);
+    background-color: #F7EBD8;
+}
+
+.products_container_1>div {
+    /* border: 1px solid green; */
+}
+
+.products_container_1>div>img {
+    /* border: 1px solid red; */
+    height: 150px;
+    width: 100%;
+}
+
+.container_1_child_1 {
+    display: flex;
+    align-items: center;
+}
+
+.container_1_child_2 {
+    padding: 15px 0px;
+    line-height: 25px;
+}
+
+.container_1_child_2>h1 {
+    color: #535353;
+    font-size: 43px;
+    line-height: 36px;
+    font-family: playfairdisplay;
+    margin-bottom: 10px;
+}
+
+.container_1_child_2>p {
+    font-size: 14px;
+    color: #948e8e;
+}
+
+.container_1_child_2>button {
+    font-size: 13px;
+    font-weight: bold;
+    color: #948e8e;
+}
+
+.container_1_child_2>.container_1_child_2_para {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.container_1_child_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #948e8e;
+}
+
+.container_1_child_3>div>select {
+    background-color: #F7EBD8;
+}
+
+.products_container_2 {
+    /* border: 1px solid rgb(0, 255, 213); */
+    background-color: #FFFBF2;
+    /* height: 100vh; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 15% 83%);
+    gap: 2%;
+}
+
+
+.products_container_2>div {
+    /* border: 1px solid rebeccapurple; */
+}
+
+.container_2_child_1 {
+    height: 500px;
+    /* border: 1px solid red; */
+    /* overflow-y: scroll; */
+    position: sticky;
+    top: 55px;
+}
+
+
+
+/* width */
+.scrollbar::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+    background: maroon;
+}
+
+.scrollbar {
+    /* border: 1px solid red; */
+    height: 300px;
+    overflow-y: scroll;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+    background: yellow;
+}
+
+
+
+.container_2_child_1 summary {
+    display: flex;
+}
+
+.container_2_child_1 hr {
+    margin: 10px 0px;
+}
+
+.container_2_child_1 summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_2_child_1 details>div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.container_2_child_1 input {
+    border-radius: 0;
+    height: 20px;
+    width: 20px;
+}
+
+.container_2_child_1 details>div p {
+    font-size: 15px;
+}
+
+.products_root {
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.grid_filter {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grid_filter>div {
+    /* border: 1px solid green; */
+    height: 20px;
+    width: 20px;
+
+}
+
+.single_grid {
+    background-color: #535353;
+}
+
+.double_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.double_grid>div {
+    background-color: #948e8e;
+}
+
+.container_2_child_1 summary>p {
+    color: #7e7979;
+}
+
+/* .container_2_child_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+} */
+
+.container_2_child_2_double {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 10px;
+
+}
+
+.container_2_child_2_single {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 10px;
+
+}
+
+
+.HomeCard {
+    /* border: 1px solid red; */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.HomeCardImg_Div {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    /* border: 1px solid rgb(2, 0, 128); */
+    transition: transform 0.3s ease-in-out;
+}
+
+.HomeCardImg_Div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HomeCardoverlay {
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.387);
+    transition: height 0.2s ease;
+}
+
+.HomeCard:hover .HomeCardoverlay {
+    height: 30px;
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 13px;
+}
+
+.HomeCardText {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.HomeCardText>p {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.title {
+    color: #7d7d7a;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.size {
+    color: #7d7d7a;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.wishlistHeart {
+    /* border: 1px solid red; */
+    display: inline-block;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 10px;
+}
+
+.routes_mobile {
+    display: none;
+}
+
+.filterContainer {
+    display: none;
+}
+
+.paginationBtns {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding: 40px 0px;
+    background-color: #FFFBF2;
+}
+
+.paginationBtns button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.paginationBtns button:hover {
+    color: maroon;
+}
+
+.paginationBtns button:nth-child(2) {
+    cursor: text;
+}
+
+.filterdrawerBody {
+    border: 1px solid red;
+
+}
+
+.bottonsDiv {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottonsDiv button {
+    border: 1px solid rgb(153, 255, 0);
+    padding: 15px 0px;
+    color: #e95827;
+}
+
+.bottonsDiv button:hover {
+    color: white;
+    background-color: #e95827;
+}
+
+@media (max-width:1180px) {
+    .routes_mobile {
+        display: contents;
+        color: #7d7d7a;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .products_container_1 {
+        /* border: 1px solid red; */
+        display: flex;
+        text-align: center;
+        padding: 0px 20px;
+        background-color: #FEFBF2;
+    }
+
+    .container_1_child_1 {
+        display: none;
+    }
+
+    .container_1_child_3 {
+        display: none;
+    }
+
+    .container_1_child_2>p {
+        font-size: 14px;
+    }
+
+    .container_1_child_2>button {
+        text-decoration: underline;
+    }
+
+    .container_2_child_1 {
+        display: none;
+    }
+
+    .products_container_2 {
+        /* border: 1px solid red; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container_2_child_2_double,
+    .container_2_child_2_single {
+        /* border: 1px solid green; */
+        background-color: #FEFBF2;
+    }
+
+    .container_2_child_2_double {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container_2_child_2_single {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filterContainer {
+        /* border: 1px solid red; */
+        height: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .filterContainer>div {
+        background-color: #fff2dc;
+        height: 30px;
+        /* border: 1px solid green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .grid_filter {
+        margin: unset;
+    }
+
+    .ProductMain_container {
+        background-color: #FEFBF2;
+    }
+
+
+}
+
+@media (max-width:770px) {
+    .container_2_child_2_double {
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container_2_child_2_single {
+        padding: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

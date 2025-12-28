@@ -1,0 +1,246 @@
+.Conteiner {
+    /* border: 1px solid yellow; */
+    display: flex;
+    padding: 0px 4%;
+    gap: 8px;
+    background-color: #FFFBEE;
+}
+
+.Conteiner>div:nth-child(1) {
+    width: 17%;
+}
+
+.Conteiner>div:nth-child(1) img {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.Conteiner>div:nth-child(2) {
+    width: 90%;
+}
+
+.Conteiner>div:nth-child(2) p {
+    font-size: 11px;
+}
+
+.twoFlex {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.twoFlex>div:nth-child(1) {
+    width: 60%;
+}
+
+.twoFlex>div:nth-child(2) {
+    width: 40%;
+    color: #3F3F3F;
+    background-color: #FFFBEE;
+    padding-right: 3%;
+}
+
+.ProductDiscription>div:nth-child(1) p:nth-child(1) {
+    color: #BE7200;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.ProductDiscription>div:nth-child(1) div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3%;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.ProductDiscription>div:nth-child(1) p:nth-child(3) {
+    font-size: 11px;
+}
+
+.ProductDiscription>div:nth-child(1) h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.ProductDiscription>div:nth-child(1) p:last-child {
+    font-size: 8px;
+}
+
+.ProductDiscription>div:nth-child(2) div {
+    /* font-size: 14px; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.ProductDiscription>div:nth-child(2) div p {
+    display: flex;
+    align-items: center;
+}
+
+.ProductDiscription>div:nth-child(2) button {
+    font-size: 12px;
+    border: 1px solid #D7D7D7;
+    padding: 5px 13px;
+    margin: 10px 10px 10px 0px;
+    font-weight: 500;
+
+}
+
+.ProductDiscription>div:nth-child(2) h2 {
+    font-size: 13px;
+}
+
+.ProductDiscription>div:nth-child(2) button:hover {
+    border: 1px solid #F2C452;
+    color: white;
+    background-color: #F2C452;
+}
+
+.ProductDiscription>div:nth-child(2) h2 {
+    color: red;
+}
+
+.selectedSize {
+    background-color: #F2C452;
+    border: 1px solid #F2C452;
+    color: white;
+}
+
+.ProductDiscription>div:nth-child(3) {
+    margin: 10px 0px;
+}
+
+.ProductDiscription>div:nth-child(3) button {
+    padding: 3px 10px;
+}
+
+.ProductDiscription>div:nth-child(3) button:nth-child(2) {
+    cursor: text;
+}
+
+.ProductDiscription>div:nth-child(3) div {
+    border: 1px solid #DACEB1;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.ProductDiscription>div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.ProductDiscription>div:nth-child(4) button {
+    background-color: maroon;
+    color: white;
+    width: 55%;
+    padding: 5px 0px;
+    font-size: 15px;
+}
+
+.ProductDiscription>div:nth-child(4) svg {
+    font-size: 30px;
+    cursor: pointer;
+    color: gainsboro;
+}
+
+.ProductDiscription>div:nth-child(5) {
+    font-size: 12px;
+}
+
+.ProductDiscription>div:nth-child(5) input {
+    border: 1px solid grey;
+    outline: none;
+    padding: 5px;
+    background-color: #fffbeeb3;
+    width: 40%;
+}
+
+
+
+.ProductDiscription>div:nth-child(6) button {
+    border: 1px solid #A2A2A2;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    gap: 10px;
+    color: #646464;
+}
+
+.ProductDiscription>div:nth-child(6) h2 {
+    margin: 20px 0px 7px 0px;
+    font-size: 12.5px;
+}
+
+.ProductDiscription>div:nth-child(6) svg {
+    font-size: 20px;
+}
+
+.featureContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 13px;
+    gap: 10px;
+}
+
+.featureContainer p {
+    display: flex;
+    align-items: center;
+}
+
+.accordianText {
+    font-size: 13px;
+}
+
+.process {
+    cursor: progress;
+}
+
+@media (max-width:800px) {
+    .twoFlex {
+        flex-direction: column;
+    }
+
+    .twoFlex>div:nth-child(1) {
+        width: 100%;
+    }
+
+    .twoFlex>div:nth-child(2) {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .ProductDiscription>div:nth-child(4) button {
+        width: 100%;
+    }
+
+    .ProductDiscription>div:nth-child(6) button {
+        width: 100%;
+    }
+
+    .ProductDiscription>div:nth-child(5) input {
+        width: 100%;
+    }
+}
+
+@media (max-width:700px) {
+    .Conteiner>div:nth-child(2) p {
+        font-size: 7px;
+    }
+}
+
+@media (max-width:400px) {
+    .Conteiner>div:nth-child(2) p {
+        font-size: 5px;
+    }
+}

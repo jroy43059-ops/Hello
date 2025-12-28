@@ -1,0 +1,47 @@
+.orderHeading {
+    /* border: 1px solid red; */
+    font-weight: 500;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 10% 42% 12% 12% 12% 12%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #F5F1E9;
+    padding: 10px 0px;
+}
+
+.orderCard {
+    border-bottom: 1px solid #F8ECD7;
+    display: grid;
+    grid-template-columns: 10% 42% 12% 12% 12% 12%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.orderCard div:nth-child(2) {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+@media (max-width:600px) {
+    .orderHeading {
+        font-size: x-small;
+    }
+
+    .orderCard {
+        font-size: x-small;
+    }
+}
+
+@media (max-width:400px) {
+    .orderHeading {
+        font-size: xx-small;
+    }
+
+}

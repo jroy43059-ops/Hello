@@ -1,0 +1,44 @@
+.HomeCard {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.HomeCardImg_Div {
+    width: 100%;
+    height: 100%;
+}
+
+.HomeCardImg_Div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HomeCardoverlay {
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease;
+}
+
+.HomeCard:hover .HomeCardoverlay {
+    height: 30px;
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 13px;
+}
+
+.HomeCardText {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+}

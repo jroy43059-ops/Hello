@@ -1,0 +1,172 @@
+.checkoutPageLogo {
+    margin: auto;
+    padding: 15px 0px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.heading {
+    background-color: #FFF3DD;
+    font-size: 40px;
+    color: #535353;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px 4%;
+    margin-bottom: 20px;
+}
+
+.CheckoutContainer {
+    /* border: 1px solid darkblue; */
+    display: flex;
+}
+
+.CheckoutContainer>div {
+    /* border: 1px solid green; */
+    padding: 0 4%;
+}
+
+.CheckoutForm {
+    width: 60%;
+}
+
+.CheckoutForm p {
+    margin-top: 10px;
+}
+
+.CheckoutForm>div>input {
+    width: 100%;
+    border: 1px solid gray;
+    background-color: #FFFBF2;
+    padding: 10px;
+    outline-color: red;
+}
+
+.CheckoutForm>div>div {
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+}
+
+.CheckoutForm>div>div>div {
+    width: 50%;
+}
+
+.CheckoutForm>div>div>div>input {
+    width: 100%;
+    border: 1px solid gray;
+    background-color: #FFFBF2;
+    padding: 10px;
+    outline-color: red;
+}
+
+.CheckoutForm>div>div:nth-child(13) {
+    /* border: 1px solid red; */
+    display: grid;
+    gap: 0;
+}
+
+.CheckoutForm>div>div:nth-child(13) div {
+    display: flex;
+    gap: 20px;
+}
+
+.CheckoutSummary {
+    width: 40%;
+}
+
+.CheckoutContainer h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.CheckoutSummary>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.CheckoutSummary>div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.CheckoutSummary>div:nth-child(4) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CheckoutSummary button {
+    background-color: #F8ECD7;
+    width: 100%;
+    color: gray;
+    padding: 10px;
+    font-size: large;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.orderSummartCard {
+    border-bottom: 1px solid #F8ECD7;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 10px 0px;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.confAddressBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #E04E1C;
+    margin: 10px 0px;
+    font-weight: 500;
+    color: white;
+}
+
+.confAddressBtn:hover {
+    background-color: maroon;
+    transition: all 700ms;
+}
+
+.orderSummartCard>div>div {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 95%;
+}
+
+.pymentOption>p:nth-child(2) {
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.pymentOption>p:nth-child(3) {
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.pymentOption>div {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.pymentOption>div input {
+    padding: 10px;
+    border: 1px solid gray;
+    outline-color: red;
+    margin-bottom: -10px;
+    background-color: #FFFBF2;
+}
+
+@media (max-width:660px) {
+    .CheckoutContainer {
+        /* border: 1px solid yellow; */
+        flex-direction: column;
+    }
+
+    .CheckoutContainer>div {
+        width: 100%;
+    }
+}
