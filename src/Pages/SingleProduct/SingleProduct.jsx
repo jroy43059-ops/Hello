@@ -38,7 +38,7 @@ export default function SingleProduct() {
     }, [id])
 
     const getData = async () => {
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/products/${id}`)
+        await fetch(`https://hello-oouh.onrender.com/products/${id}`)
             .then(res => res.json())
             .then(res => setObj(res[0]))
             .catch(err => console.log(err))
@@ -92,7 +92,7 @@ export default function SingleProduct() {
                     price: obj.price,
                     size: selSize
                 }
-                await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/add`, {
+                await fetch(`https://hello-oouh.onrender.com/cart/add`, {
                     method: 'POST',
                     headers: {
                         'Content-type': 'application/json',
@@ -159,7 +159,7 @@ export default function SingleProduct() {
             })
 
         } else {
-            await fetch(`https://proud-lamb-suspenders.cyclic.app/wishlists/add`, {
+            await fetch(`https://hello-oouh.onrender.com/wishlists/add`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

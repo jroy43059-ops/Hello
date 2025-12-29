@@ -14,7 +14,7 @@ export default function Search() {
     }, [query])
 
     const getData = async () => {
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/products/?q=${query}`)
+        await fetch(`https://hello-oouh.onrender.com/products/?q=${query}`)
             .then(res => res.json())
             .then(res => setArr(res))
             .catch(err => console.log(err))

@@ -43,7 +43,7 @@ export default function UserProfile() {
     }, [])
 
     const GetData = async () => {
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/users/${userID._id}`)
+        await fetch(`https://hello-oouh.onrender.com/users/${userID._id}`)
             .then((res) => res.json())
             .then((res) => {
                 setUser(res[0])
@@ -84,7 +84,7 @@ export default function UserProfile() {
             mobile: mobile || user.mobile,
             avatar: data.secure_url
         }
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/users/edit/${user._id}`, {
+        await fetch(`https://hello-oouh.onrender.com/users/edit/${user._id}`, {
             method: 'PATCH',
             headers: {
                 "Content-type": "application/json"

@@ -22,7 +22,7 @@ export default function Wishlist() {
     }, [])
 
     const getUserWishlist = async () => {
-        await fetch('https://proud-lamb-suspenders.cyclic.app/wishlists/userwishlist', {
+        await fetch('https://hello-oouh.onrender.com/wishlists/userwishlist', {
             headers: {
                 'Authorization': token
             }
@@ -33,7 +33,7 @@ export default function Wishlist() {
 
     const deleteWishlist = async (id) => {
         setDeleteWishlistLoading(true)
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/wishlists/delete/${id}`, {
+        await fetch(`https://hello-oouh.onrender.com/wishlists/delete/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': token
@@ -87,7 +87,7 @@ export default function Wishlist() {
                 size
             }
             setmoveToCartLoading(true)
-            await fetch(`https://proud-lamb-suspenders.cyclic.app/wishlists/movetocart/${product._id}`, {
+            await fetch(`https://hello-oouh.onrender.com/wishlists/movetocart/${product._id}`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

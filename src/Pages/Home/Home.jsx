@@ -63,7 +63,7 @@ export default function Home() {
 
 
   const GetData = async (cat, set) => {
-    await fetch(`https://proud-lamb-suspenders.cyclic.app/products/?category=${cat}`)
+    await fetch(`https://hello-oouh.onrender.com/products/?category=${cat}`)
       .then((res) => res.json())
       .then((res) => {
         set(res)
@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   const GetDataMenData = async () => {
-    await fetch(`https://proud-lamb-suspenders.cyclic.app/products/?gender=men`)
+    await fetch(`https://hello-oouh.onrender.com/products/?gender=men`)
       .then((res) => res.json())
       .then((res) => {
         setMenData(res)

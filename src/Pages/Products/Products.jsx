@@ -75,7 +75,7 @@ export default function Products() {
 
     const getData = async () => {
         setProdLoad(true)
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/products/?gender=${gender}&category=${category}&size=${size}&color=${color}&occasion=${occasion}&collections=${collections}&limit=12&skip=${skip}&sort=${sort}&order=${order}`)
+        await fetch(`https://hello-oouh.onrender.com/products/?gender=${gender}&category=${category}&size=${size}&color=${color}&occasion=${occasion}&collections=${collections}&limit=12&skip=${skip}&sort=${sort}&order=${order}`)
             .then((res) => res.json())
             .then((res) => {
                 setProdLoad(false)

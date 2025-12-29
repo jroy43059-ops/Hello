@@ -28,7 +28,7 @@ export default function Cart() {
     }, [])
 
     const getCart = async () => {
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/usercart`, {
+        await fetch(`https://hello-oouh.onrender.com/cart/usercart`, {
             headers: {
                 'Authorization': token
             }
@@ -54,7 +54,7 @@ export default function Cart() {
             quentity: quentity - 1
         }
 
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/edit/${id}`, {
+        await fetch(`https://hello-oouh.onrender.com/cart/edit/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-type': 'application/json',
@@ -78,7 +78,7 @@ export default function Cart() {
             quentity: quentity + 1
         }
 
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/edit/${id}`, {
+        await fetch(`https://hello-oouh.onrender.com/cart/edit/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-type': 'application/json',
@@ -98,7 +98,7 @@ export default function Cart() {
 
     const removeFromCart = async (id) => {
         setRemove(true)
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/delete/${id}`, {
+        await fetch(`https://hello-oouh.onrender.com/cart/delete/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': token

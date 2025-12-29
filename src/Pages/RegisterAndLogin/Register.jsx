@@ -83,7 +83,7 @@ export default function Register() {
             })
         } else {
             setLoading(true)
-            await fetch(`https://proud-lamb-suspenders.cyclic.app/users/register`, {
+            await fetch(`https://hello-oouh.onrender.com/users/register`, {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

@@ -13,7 +13,7 @@ export default function Orders() {
     }, [])
 
     const getUserOder = async () => {
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/checkouts/usercheckout`, {
+        await fetch(`https://hello-oouh.onrender.com/checkouts/usercheckout`, {
             headers: {
                 'Authorization': token
             }

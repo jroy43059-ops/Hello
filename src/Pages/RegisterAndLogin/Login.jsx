@@ -68,7 +68,7 @@ export default function Login() {
             })
         } else {
             setLoading(true)
-            await fetch(`https://proud-lamb-suspenders.cyclic.app/users/login`, {
+            await fetch(`https://hello-oouh.onrender.com/users/login`, {
                 method: "POST",
                 body: JSON.stringify(obj),
                 headers: {

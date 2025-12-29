@@ -19,7 +19,7 @@ import {
 export const getAdmin = async (dispatch) => {
     dispatch({ type: GET_ADMIN_LOADING })
     try {
-        let admins = await fetch(`https://proud-lamb-suspenders.cyclic.app/users/admin`)
+        let admins = await fetch(`https://hello-oouh.onrender.com/users/admin`)
         let actualAdmins = await admins.json()
         dispatch({ type: GET_ADMIN_SUCCESS, payload: actualAdmins })
     } catch (e) {
@@ -29,7 +29,7 @@ export const getAdmin = async (dispatch) => {
 export const getUser = async (dispatch) => {
     dispatch({ type: GET_USERS_LOADING })
     try {
-        let users = await fetch(`https://proud-lamb-suspenders.cyclic.app/users/user`)
+        let users = await fetch(`https://hello-oouh.onrender.com/users/user`)
         let actualusers = await users.json()
         dispatch({ type: GET_USERS_SUCCESS, payload: actualusers })
     } catch (e) {
@@ -40,7 +40,7 @@ export const getUser = async (dispatch) => {
 export const updateUser = async (dispatch, id, obj) => {
     dispatch({ type: UPDATE_USERS_LOADING })
     try {
-        let updateResult = await fetch(`https://proud-lamb-suspenders.cyclic.app/users/edit/${id}`, {
+        let updateResult = await fetch(`https://hello-oouh.onrender.com/users/edit/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-type': 'application/json'
@@ -58,7 +58,7 @@ export const updateUser = async (dispatch, id, obj) => {
 export const deleteUser = async (dispatch, id) => {
     dispatch({ type: DELETE_USERS_LOADING })
     try {
-        let deleteResult = await fetch(`https://proud-lamb-suspenders.cyclic.app/users/delete/${id}`, {
+        let deleteResult = await fetch(`https://hello-oouh.onrender.com/users/delete/${id}`, {
             method: 'DELETE'
         })
         let deleteUpdateResult = await deleteResult.json()
@@ -71,7 +71,7 @@ export const deleteUser = async (dispatch, id) => {
 export const getProducts = async (dispatch) => {
     dispatch({ type: GET_PRODUCTS_LOADING })
     try {
-        let products = await fetch(`https://proud-lamb-suspenders.cyclic.app/products`)
+        let products = await fetch(`https://hello-oouh.onrender.com/products`)
         let actualproducts = await products.json()
         dispatch({ type: GET_PRODUCTS_SUCCESS, payload: actualproducts })
     } catch (e) {
@@ -82,7 +82,7 @@ export const getProducts = async (dispatch) => {
 export const addProduct = async (dispatch, obj) => {
     dispatch({ type: ADD_PRODUCTS_LOADING })
     try {
-        let addProduct = await fetch(`https://proud-lamb-suspenders.cyclic.app/products/add`, {
+        let addProduct = await fetch(`https://hello-oouh.onrender.com/products/add`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -100,7 +100,7 @@ export const addProduct = async (dispatch, obj) => {
 export const updateProduct = async (dispatch, id, obj) => {
     dispatch({ type: UPDATE_PRODUCTS_LOADING })
     try {
-        let updateResult = await fetch(`https://proud-lamb-suspenders.cyclic.app/products/update/${id}`, {
+        let updateResult = await fetch(`https://hello-oouh.onrender.com/products/update/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-type': 'application/json'
@@ -117,7 +117,7 @@ export const updateProduct = async (dispatch, id, obj) => {
 export const deleteProduct = async (dispatch, id) => {
     dispatch({ type: DELETE_PRODUCTS_LOADING })
     try {
-        let deleteResult = await fetch(`https://proud-lamb-suspenders.cyclic.app/products/delete/${id}`, {
+        let deleteResult = await fetch(`https://hello-oouh.onrender.com/products/delete/${id}`, {
             method: 'DELETE'
         })
         let deleteUpdateResult = await deleteResult.json()
@@ -130,7 +130,7 @@ export const deleteProduct = async (dispatch, id) => {
 export const getCart = async (dispatch, token) => {
     dispatch({ type: GET_CART_LOADING })
     try {
-        const cart = await fetch('https://proud-lamb-suspenders.cyclic.app/cart', {
+        const cart = await fetch('https://hello-oouh.onrender.com/cart', {
             headers: {
                 'Authorization': token
             }
@@ -145,7 +145,7 @@ export const getCart = async (dispatch, token) => {
 export const updateCart = async (dispatch, id, obj, token) => {
     dispatch({ type: UPDATE_CART_LOADING })
     try {
-        const cart = await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/edit/${id}`, {
+        const cart = await fetch(`https://hello-oouh.onrender.com/cart/edit/${id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': token,
@@ -163,7 +163,7 @@ export const updateCart = async (dispatch, id, obj, token) => {
 export const deleteCart = async (dispatch, id, token) => {
     dispatch({ type: DELETE_CART_LOADING })
     try {
-        const cart = await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/delete/${id}`, {
+        const cart = await fetch(`https://hello-oouh.onrender.com/cart/delete/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': token
@@ -179,7 +179,7 @@ export const deleteCart = async (dispatch, id, token) => {
 export const getWishlist = async (dispatch, token) => {
     dispatch({ type: GET_WISHLIST_LOADING })
     try {
-        const wishlist = await fetch('https://proud-lamb-suspenders.cyclic.app/wishlists', {
+        const wishlist = await fetch('https://hello-oouh.onrender.com/wishlists', {
             headers: {
                 'Authorization': token
             }
@@ -194,7 +194,7 @@ export const getWishlist = async (dispatch, token) => {
 export const getCheckout = async (dispatch, token) => {
     dispatch({ type: GET_CHECKOUT_LOADING })
     try {
-        const checkoutList = await fetch('https://proud-lamb-suspenders.cyclic.app/checkouts', {
+        const checkoutList = await fetch('https://hello-oouh.onrender.com/checkouts', {
             headers: {
                 'Authorization': token
             }
@@ -209,7 +209,7 @@ export const getCheckout = async (dispatch, token) => {
 export const deleteWishlist = async (dispatch, id, token) => {
     dispatch({ type: DELETE_WISHLIST_LOADING })
     try {
-        let deleteResult = await fetch(`https://proud-lamb-suspenders.cyclic.app/wishlists/delete/${id}`, {
+        let deleteResult = await fetch(`https://hello-oouh.onrender.com/wishlists/delete/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': token

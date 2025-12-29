@@ -39,7 +39,7 @@ export default function Checkout() {
     }, [])
 
     const getCart = async () => {
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/cart/usercart`, {
+        await fetch(`https://hello-oouh.onrender.com/cart/usercart`, {
             headers: {
                 'Authorization': token
             }
@@ -75,7 +75,7 @@ export default function Checkout() {
     }
 
     const checkoutSucess = async (id, obj) => {
-        await fetch(`https://proud-lamb-suspenders.cyclic.app/checkouts/addcheckout/${id}`, {
+        await fetch(`https://hello-oouh.onrender.com/checkouts/addcheckout/${id}`, {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
