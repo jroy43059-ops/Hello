@@ -7,15 +7,15 @@ const { authenticate } = require('./middleware/authenticate.middleware')
 const { cartRoute } = require('./routes/cart.routes')
 const { wishlistRoute } = require('./routes/wishlist.routes')
 const { checkoutRoutes } = require('./routes/checkout.routes')
+const path = require('path')
 require('dotenv').config()
 
 const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.send("Welcome to our Manyavar Database")
-})
+// Static files serve করা (React build folder)
+app.use(express.static(path.join(__dirname, "../build")));
 
 app.use("/users", userRoute)
 app.use("/products", productRoute)
@@ -24,7 +24,12 @@ app.use('/cart', cartRoute)
 app.use('/wishlists', wishlistRoute)
 app.use('/checkouts', checkoutRoutes)
 
-const PORT = process.env.PORT || 8080; 
+// সব রাউটের জন্য index.html পাঠানো
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../build", "index.html"));
+});
+
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, async () => {
     try {
