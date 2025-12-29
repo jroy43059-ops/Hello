@@ -29,7 +29,7 @@ export default function AdminDashboard() {
 
   const user = JSON.parse(localStorage.getItem('Manyavaruser'))
 
-  const { dashBoard, setDashBoard, addProduct, setAddProduct, inventory, setInventory,
+  const { dashBoard = true, setDashBoard, addProduct, setAddProduct, inventory, setInventory,
     users, setUsers, admins, setAdmins, cart, setCart, wishlist, setWishlist,
     checkout, setCheckout } = useContext(AdminDashboardContext)
 
