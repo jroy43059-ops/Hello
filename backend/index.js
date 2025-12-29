@@ -14,6 +14,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+// build ফোল্ডার থেকে ফাইল সার্ভ করা
 app.use(express.static(path.join(__dirname, "../build")));
 
 app.use("/users", userRoute)
@@ -23,6 +24,7 @@ app.use('/cart', cartRoute)
 app.use('/wishlists', wishlistRoute)
 app.use('/checkouts', checkoutRoutes)
 
+// এটি আপনার ড্যাশবোর্ড ওপেন করবে
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../build", "index.html"));
 });

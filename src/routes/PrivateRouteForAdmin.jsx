@@ -1,14 +1,6 @@
-import React, { useContext } from 'react'
-import { LoggerContext } from '../Context/LoggerContex'
-import { Navigate } from 'react-router-dom'
+import React from 'react'
 
 export default function PrivateRouteForAdmin({ children }) {
-    const { role } = useContext(LoggerContext)
-
-    if (false) {
-        return <Navigate to='*' />
-    }
-
+    // সাময়িকভাবে প্রটেকশন বন্ধ রাখা হলো
     return children
-
 }
